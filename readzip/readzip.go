@@ -1,4 +1,4 @@
-package main
+package readzip
 
 import (
 	"archive/zip"
@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func main() {
+func readZip() {
 	filePath := "/Users/liang/Desktop/log.zip"
 	// 打开一个zip格式文件
 	r, err := zip.OpenReader(filePath)
